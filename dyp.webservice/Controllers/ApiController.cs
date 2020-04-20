@@ -31,7 +31,7 @@ namespace dyp.webservice.Controllers
                 DbPath = ""
             };
 
-            _logger.LogInformation($"Api Version: Timestamp: { versionDto.Timestamp }, Number: {versionDto.Number}");
+            _logger.LogInformation($"Api j Version: Timestamp: { versionDto.Timestamp }, Number: {versionDto.Number}");
 
             return versionDto;
         }
