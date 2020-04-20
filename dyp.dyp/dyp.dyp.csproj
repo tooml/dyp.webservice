@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dyp.adapter\dyp.adapter.csproj" />
+    <ProjectReference Include="..\dyp.contracts\dyp.contracts.csproj" />
+    <ProjectReference Include="..\dyp.messagehandling\dyp.messagehandling.csproj" />
+    <ProjectReference Include="..\dyp.provider\dyp.provider.csproj" />
+  </ItemGroup>
+
+</Project>
