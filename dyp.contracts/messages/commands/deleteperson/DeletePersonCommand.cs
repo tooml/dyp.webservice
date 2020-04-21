@@ -4,6 +4,6 @@ namespace dyp.contracts.messages.commands.deleteperson
 {
     public class DeletePersonCommand : Command
     {
-        public string Id;
+        public string Id { get; set; }
     }
 }

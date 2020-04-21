@@ -44,6 +44,7 @@ namespace dyp.dyp.messagepipelines
                     var update = _persons.Single(pers => pers.Id.Equals(person_update.Id));
                     update.First_name = person_update.First_name;
                     update.Last_name = person_update.Last_name;
+                    update.Image = person_update.Image;
                     break;
                 case PersonDeleted ps:
                     var person_delete_data = ps.Data as PersonDeleteData;

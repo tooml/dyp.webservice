@@ -13,7 +13,7 @@ namespace dyp.contracts.messages.commands.matchresult
 
     public class MatchResultNotificationCommand : Command
     {
-        public string MatchId;
-        public IEnumerable<SetResult> Results;
+        public string MatchId { get; set; }
+        public IEnumerable<SetResult> Results { get; set; }
     }
 }

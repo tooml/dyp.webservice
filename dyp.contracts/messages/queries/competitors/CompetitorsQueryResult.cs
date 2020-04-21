@@ -6,9 +6,10 @@ namespace dyp.contracts.messages.queries.competitors
     {
         public class Competitor
         {
-            public string Id;
-            public string Name;
-            public bool Compete;
+            public string Id { get; set; }
+            public string Name { get; set; }
+            public bool Compete { get; set; }
+            public string Image { get; set; }
         }
 
         public Competitor[] Competitors { get; set; }

@@ -2,10 +2,11 @@
 {
     public class Player
     {
-        public string Id;
-        public string FirstName;
-        public string LastName;
-        public string FullName;
-        public string FullNameShort;
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName { get; set; }
+        public string FullNameShort { get; set; }
+        public string Image { get; set; }
     }
 }

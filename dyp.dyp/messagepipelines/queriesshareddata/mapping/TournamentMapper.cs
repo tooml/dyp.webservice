@@ -47,7 +47,8 @@ namespace dyp.dyp.messagepipelines.mapping
                 FirstName = player.First_name,
                 LastName = player.Last_name,
                 FullName = string.Concat(player.First_name, ", ", player.Last_name),
-                FullNameShort = string.Concat(player.First_name, ", ", player.Last_name.First(), ".")
+                FullNameShort = string.Concat(player.First_name, ", ", player.Last_name.First(), "."),
+                Image = player.Image
             };
         }
 

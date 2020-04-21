@@ -4,9 +4,9 @@ namespace dyp.contracts.messages.commands.storeperson
 {
     public class StorePersonCommand : Command
     {
-        public string Id;
-        public string FirstName;
-        public string LastName;
-        public string Image;
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Image { get; set; }
     }
 }

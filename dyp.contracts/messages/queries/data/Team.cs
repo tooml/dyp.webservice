@@ -2,7 +2,7 @@
 {
     public class Team
     {
-        public Player PlayerOne;
-        public Player PlayerTwo;
+        public Player PlayerOne { get; set; }
+        public Player PlayerTwo { get; set; }
     }
 }

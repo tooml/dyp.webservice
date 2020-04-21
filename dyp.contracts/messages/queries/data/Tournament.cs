@@ -4,12 +4,12 @@ namespace dyp.contracts.messages.queries.data
 {
     public class Tournament
     {
-        public string Id;
-        public string Name;
-        public string Created;
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Created { get; set; }
 
-        public Options Options;
+        public Options Options { get; set; }
 
-        public IEnumerable<Round> Rounds;
+        public IEnumerable<Round> Rounds { get; set; }
     }
 }

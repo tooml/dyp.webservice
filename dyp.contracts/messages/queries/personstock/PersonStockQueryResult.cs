@@ -5,6 +5,6 @@ namespace dyp.contracts.messages.queries.personstock
 {
     public class PersonStockQueryResult : QueryResult
     {
-        public Person[] Persons;
+        public Person[] Persons { get; set; }
     }
 }

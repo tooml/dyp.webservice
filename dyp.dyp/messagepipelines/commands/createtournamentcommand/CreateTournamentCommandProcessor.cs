@@ -84,7 +84,8 @@ namespace dyp.dyp.messagepipelines.commands.createtournamentcommand
                 {
                     Id = person.Id,
                     First_name = person.First_name,
-                    Last_name = person.Last_name
+                    Last_name = person.Last_name,
+                    Image = person.Image
                 }
             };
 

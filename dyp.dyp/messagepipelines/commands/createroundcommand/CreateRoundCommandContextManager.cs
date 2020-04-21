@@ -52,6 +52,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                         Id = player_data.Player.Id,
                         First_name = player_data.Player.First_name,
                         Last_name = player_data.Player.Last_name,
+                        Image = player_data.Player.Image,
                         Enabled = true
                     });
                     break;

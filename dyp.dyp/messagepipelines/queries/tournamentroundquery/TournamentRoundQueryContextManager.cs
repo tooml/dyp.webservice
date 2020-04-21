@@ -100,6 +100,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentroundquery
                 Id = player.Id,
                 First_name = player.First_name,
                 Last_name = player.Last_name,
+                Image = player.Image
             };
         }
 

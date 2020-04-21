@@ -22,7 +22,8 @@ namespace dyp.webservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IEventStore, EventStore>();
+            services.AddCors();
+            services.AddSingleton<IEventStore>(store => new EventStore(Configuration["EventStore:Path"]));
             services.AddControllers();
         }
 
@@ -37,6 +38,8 @@ namespace dyp.webservice
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(options => options.SetIsOriginAllowed(x => _ = true).AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
             app.UseAuthorization();
 

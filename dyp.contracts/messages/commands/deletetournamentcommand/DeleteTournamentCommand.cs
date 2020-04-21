@@ -4,6 +4,6 @@ namespace dyp.contracts.messages.commands.deletetournamentcommand
 {
     public class DeleteTournamentCommand : Command
     {
-        public string Id;
+        public string Id { get; set; }
     }
 }

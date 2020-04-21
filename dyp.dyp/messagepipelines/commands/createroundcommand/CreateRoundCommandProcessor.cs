@@ -37,7 +37,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
 
             var events = new List<Event>();
             events.Add(Map(round, round_id, cmd.TournamentId, ctx_model.Round_count));
-            events.AddRange(Map(round.Matches, ctx_model.MatchOption, round_id, cmd.TournamentId));
+            events.AddRange(Map(round.Matches, ctx_model, round_id, cmd.TournamentId));
             events.AddRange(Map(round.Walkover, cmd.TournamentId));
 
             return new CommandOutput(new Success(), events.ToArray());
@@ -68,7 +68,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
         }
 
         private IEnumerable<Event> Map(IEnumerable<contracts.data.Match> matches,
-                                        MatchOptions match_options, string round_id, string tournament_id)
+                                        CreateRoundCommandContextModel ctx_model, string round_id, string tournament_id)
         {
             var matches_data = matches.Select(m => new MatchData()
             {
@@ -80,13 +80,15 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     {
                         Id = m.Home.Member_one.Id,
                         First_name = m.Home.Member_one.First_name,
-                        Last_name = m.Home.Member_one.Last_name
+                        Last_name = m.Home.Member_one.Last_name,
+                        Image = Get_player_image(ctx_model, m.Home.Member_one.Id)
                     },
                     Player_two = new events.data.Player()
                     {
                         Id = m.Home.Member_two.Id,
                         First_name = m.Home.Member_two.First_name,
-                        Last_name = m.Home.Member_two.Last_name
+                        Last_name = m.Home.Member_two.Last_name,
+                        Image = Get_player_image(ctx_model, m.Home.Member_two.Id)
                     }
                 },
                 Away = new MatchData.Team()
@@ -95,18 +97,20 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     {
                         Id = m.Away.Member_one.Id,
                         First_name = m.Away.Member_one.First_name,
-                        Last_name = m.Away.Member_one.Last_name
+                        Last_name = m.Away.Member_one.Last_name,
+                        Image = Get_player_image(ctx_model, m.Away.Member_one.Id)
                     },
                     Player_two = new events.data.Player()
                     {
                         Id = m.Away.Member_two.Id,
                         First_name = m.Away.Member_two.First_name,
-                        Last_name = m.Away.Member_two.Last_name
+                        Last_name = m.Away.Member_two.Last_name,
+                        Image = Get_player_image(ctx_model, m.Away.Member_two.Id)
                     }
                 },
                 Table = m.Table,
-                Sets = match_options.Sets,
-                Drawn = match_options.Drawn,
+                Sets = ctx_model.MatchOption.Sets,
+                Drawn = ctx_model.MatchOption.Drawn,
             }).ToList();
 
 
@@ -126,5 +130,8 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     new TournamentContext(tournament_id, nameof(TournamentContext)), w);
             }).ToList();
         }
+
+        private string Get_player_image(CreateRoundCommandContextModel ctx_model, string player_id) =>
+            ctx_model.Players.First(player => player.Id.Equals(player_id)).Image;
     }
 }

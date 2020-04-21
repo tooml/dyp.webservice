@@ -1,0 +1,21 @@
+{
+  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
+  "Id": "25bfc2d1-d10c-4042-8ac1-496506699e13",
+  "Name": "PersonStored",
+  "Context": {
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "8b19aaae-f1bc-4493-8811-e53141cf7eb4",
+    "Name": "PersonsContext"
+  },
+  "Timestamp": "2020-04-21T13:59:44.3475062+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
+    "Person": {
+      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
+      "Id": "8b19aaae-f1bc-4493-8811-e53141cf7eb4",
+      "First_name": "ghjjjj",
+      "Last_name": "hjkkkk",
+      "Image": ""
+    }
+  }
+}

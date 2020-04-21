@@ -10,6 +10,7 @@ namespace dyp.dyp.messagepipelines.commands.changeplayerscommand
             public string Id;
             public string First_name;
             public string Last_name;
+            public string Image;
         }
 
         public class Player

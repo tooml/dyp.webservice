@@ -12,15 +12,15 @@ namespace dyp.contracts.messages.queries.data
 
     public class Match
     {
-        public string Id;
+        public string Id { get; set; }
 
-        public Team Home;
-        public Team Away;
+        public Team Home { get; set; }
+        public Team Away { get; set; }
 
-        public int Table;
-        public int Sets;
-        public bool Drawn;
+        public int Table { get; set; }
+        public int Sets { get; set; }
+        public bool Drawn { get; set; }
 
-        public IEnumerable<SetResult> SetResults;
+        public IEnumerable<SetResult> SetResults { get; set; }
     }
 }

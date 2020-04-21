@@ -4,6 +4,6 @@ namespace dyp.contracts.messages.queries.tournamentplayers
 {
     public class TournamentCompetitorsQuery : Query
     {
-        public string TournamentId;
+        public string TournamentId { get; set; }
     }
 }

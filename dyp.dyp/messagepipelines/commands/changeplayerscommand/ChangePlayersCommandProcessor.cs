@@ -67,7 +67,8 @@ namespace dyp.dyp.messagepipelines.commands.changeplayerscommand
                     {
                         Id = p.Id,
                         First_name = p.First_name,
-                        Last_name = p.Last_name
+                        Last_name = p.Last_name,
+                        Image = p.Image
                     }
                 };
 

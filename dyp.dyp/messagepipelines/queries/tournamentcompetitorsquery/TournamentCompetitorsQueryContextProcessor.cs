@@ -23,6 +23,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentplayersquery
             {
                 Id = competitor.Id,
                 Name = string.Concat(competitor.First_name, ", ", competitor.Last_name),
+                Image = competitor.Image,
                 Compete = competitor.Enabled
             };
         }

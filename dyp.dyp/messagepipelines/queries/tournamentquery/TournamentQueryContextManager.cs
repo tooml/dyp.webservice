@@ -121,6 +121,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentquery
                 Id = player.Id,
                 First_name = player.First_name,
                 Last_name = player.Last_name,
+                Image = player.Image
             };
         }
 
@@ -132,6 +133,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentquery
             {
                 player.First_name = data.Person.First_name;
                 player.Last_name = data.Person.Last_name;
+                player.Image = data.Person.Image;
             }
         }
     }
