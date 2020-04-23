@@ -1,0 +1,16 @@
+{
+  "$type": "dyp.dyp.events.PlayerActivityChanged, dyp.dyp",
+  "Id": "077199e5-0605-44b0-b5d9-81a9508332f0",
+  "Name": "PlayerActivityChanged",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:43:56.1146921+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.PlayerActivityData, dyp.dyp",
+    "Player_id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
+    "Activ": false
+  }
+}

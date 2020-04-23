@@ -10,6 +10,6 @@ namespace dyp.contracts.messages.commands.changeoptions
         public int Points { get; set; }
         public int PointsDrawn { get; set; }
         public bool Drawn { get; set; }
-        public bool Walkover { get; set; }
+        public bool FairLots { get; set; }
     }
 }

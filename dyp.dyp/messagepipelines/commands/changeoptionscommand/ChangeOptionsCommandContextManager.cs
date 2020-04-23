@@ -19,7 +19,7 @@ namespace dyp.dyp.messagepipelines.commands.changeoptionscommand
                 Points = cmd.Points,
                 PointsDrawn = cmd.PointsDrawn,
                 Drawn = cmd.Drawn,
-                Walkover = cmd.Walkover
+                Walkover = cmd.FairLots
             };
 
             return ctx_model;

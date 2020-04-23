@@ -9,6 +9,6 @@ namespace dyp.dyp.events.data
         public int Points;
         public int Points_drawn;
         public bool Drawn;
-        public bool Walkover;
+        public bool Fair_lots;
     }
 }

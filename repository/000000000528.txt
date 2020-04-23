@@ -1,0 +1,53 @@
+{
+  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
+  "Id": "88c9f386-d050-4279-a856-2cea03361e05",
+  "Name": "MatchCreated",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:46:33.177248+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
+    "Id": "53d0e45e-9b15-4995-9ba1-61db806aae48",
+    "Round_id": "81f4eb09-5e9b-440f-9ee0-bc2e9967c851",
+    "Home": {
+      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
+      "Player_one": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "823e5a61-5c38-45d3-89cd-572f703ab444",
+        "First_name": "Rocco",
+        "Last_name": "Rocco",
+        "Image": ""
+      },
+      "Player_two": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "12f0f335-abf1-4757-9b84-d37b8be2cc5f",
+        "First_name": "Pat",
+        "Last_name": "Pat",
+        "Image": ""
+      }
+    },
+    "Away": {
+      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
+      "Player_one": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
+        "First_name": "Domi",
+        "Last_name": "Domi",
+        "Image": ""
+      },
+      "Player_two": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "7f007f21-0c42-4c79-8944-d76e1d83dd3c",
+        "First_name": "Alex",
+        "Last_name": "Alex",
+        "Image": ""
+      }
+    },
+    "Table": 1,
+    "Sets": 2,
+    "Drawn": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "4ea0d25c-6fcd-404d-a27a-162a089a78db",
+  "Name": "PlayersStored",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:14:35.0020459+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "d2226332-8026-40e8-ad06-39e7f29237fc",
+      "First_name": "Bernd",
+      "Last_name": "Bernd",
+      "Image": ""
+    }
+  }
+}

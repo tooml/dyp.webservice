@@ -1,20 +1,21 @@
 {
-  "$type": "dyp.dyp.events.OptionsCreated, dyp.dyp",
-  "Id": "685ced2d-d41e-438a-81af-3f96db26476b",
-  "Name": "TournamentCreated",
+  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
+  "Id": "2d8f499e-1918-4ddc-8b3c-c9fef216ef64",
+  "Name": "PersonStored",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "148f8ac7-44f9-4d9a-9c0d-9c0d091c64fd",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "986ac80b-6f46-41b0-ae94-fa6582e0676d",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-21T14:12:02.5294429+02:00",
+  "Timestamp": "2020-04-23T14:13:57.3785175+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.OptionsData, dyp.dyp",
-    "Tables": 1,
-    "Sets": 2,
-    "Points": 2,
-    "Points_drawn": 1,
-    "Drawn": false,
-    "Walkover": true
+    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
+    "Person": {
+      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
+      "Id": "986ac80b-6f46-41b0-ae94-fa6582e0676d",
+      "First_name": "Matze",
+      "Last_name": "Matze",
+      "Image": ""
+    }
   }
 }

@@ -69,7 +69,7 @@ namespace dyp.dyp.messagepipelines.commands.createtournamentcommand
                 Points = cmd.Points,
                 Points_drawn = cmd.PointsDrawn,
                 Drawn = cmd.Drawn,
-                Walkover = cmd.Walkover
+                Fair_lots = cmd.FairLots
             };
 
             return new Event[] { new OptionsCreated(nameof(TournamentCreated),

@@ -1,0 +1,22 @@
+{
+  "$type": "dyp.dyp.events.MatchPlayed, dyp.dyp",
+  "Id": "f88aace5-2d0f-4e6c-9017-3f1b45d668ac",
+  "Name": "MatchPlayed",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:15:50.2196008+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.MatchResultData, dyp.dyp",
+    "Match_id": "408305af-81cf-4a78-99f5-4fd5fed790d3",
+    "Results": {
+      "$type": "System.Collections.Generic.List`1[[dyp.dyp.events.data.SetResult, dyp.dyp]], System.Private.CoreLib",
+      "$values": [
+        1,
+        2
+      ]
+    }
+  }
+}

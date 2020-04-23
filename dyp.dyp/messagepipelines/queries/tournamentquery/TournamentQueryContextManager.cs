@@ -59,7 +59,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentquery
             _ctx_model.Points = data.Points;
             _ctx_model.Points_drawn = data.Points_drawn;
             _ctx_model.Drawn = data.Drawn;
-            _ctx_model.Walkover = data.Walkover;
+            _ctx_model.Walkover = data.Fair_lots;
         }
 
         private void Apply(RoundCreated ev)

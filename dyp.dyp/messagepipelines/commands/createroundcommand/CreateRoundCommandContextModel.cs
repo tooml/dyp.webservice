@@ -1,5 +1,6 @@
 ﻿using dyp.messagehandling.pipeline.messagecontext;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace dyp.dyp.messagepipelines.commands.createroundcommand
 {
@@ -13,6 +14,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
             public string Image;
             public int Matches;
             public bool Enabled;
+            public int Strength;
         }
 
         public class MatchOptions
@@ -27,7 +29,11 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
         public int Tables;
         public int Sets;
         public bool Drawn;
-        public bool Walkover;
+        public bool Fair_lots;
         public MatchOptions MatchOption => new MatchOptions() { Sets = Sets, Drawn = Drawn };
+
+        public List<(string Player_one, string Player_two)> Previous_teams = new List<(string Player_one, string Player_two)>();
+
+        public Player Get_player(string player_id) => Players.First(player => player.Id.Equals(player_id));
     }
 }

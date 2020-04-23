@@ -1,0 +1,15 @@
+{
+  "$type": "dyp.dyp.events.WalkoverPlayed, dyp.dyp",
+  "Id": "88fe37ff-f9fb-4091-baa5-f95fb55b1d37",
+  "Name": "WalkoverPlayed",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:27:56.63624+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.WalkoverData, dyp.dyp",
+    "Id": "21d8fc9c-41d3-4c8a-a94c-c31b5dd39821"
+  }
+}

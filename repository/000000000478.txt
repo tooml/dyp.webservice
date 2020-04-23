@@ -1,0 +1,16 @@
+{
+  "$type": "dyp.dyp.events.TeamCreated, dyp.dyp",
+  "Id": "b55fa778-0d52-40c8-85e2-4de7414064be",
+  "Name": "TeamCreated",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:45:08.0106653+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.TeamCreatedData, dyp.dyp",
+    "Player_one_id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
+    "Player_two_id": "b849da9c-2543-493e-a63e-7a32bcc8506e"
+  }
+}

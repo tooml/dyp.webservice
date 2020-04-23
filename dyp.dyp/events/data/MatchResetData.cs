@@ -1,19 +1,10 @@
 ﻿using dyp.provider.eventstore;
-using System.Collections.Generic;
 
 namespace dyp.dyp.events.data
 {
-    public enum SetResult
+    public class MatchResetData : EventData
     {
-        Home,
-        Away,
-        Drawn,
-        None
-    }
-
-    public class MatchResultData : EventData
-    {
+        public string Tournament_id;
         public string Match_id;
-        public IEnumerable<SetResult> Results;
     }
 }

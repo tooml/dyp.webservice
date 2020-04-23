@@ -1,0 +1,17 @@
+{
+  "$type": "dyp.dyp.events.PlayerStrengthChanged, dyp.dyp",
+  "Id": "4d251676-51bc-4690-b9fe-8032c7caf685",
+  "Name": "PlayerStrengthChanged",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:45:51.7509303+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.PlayerStrengthData, dyp.dyp",
+    "Player_id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
+    "Match_id": "aaba06cd-af9e-4a09-87b1-28c8534e0343",
+    "Strength_amount": 0
+  }
+}

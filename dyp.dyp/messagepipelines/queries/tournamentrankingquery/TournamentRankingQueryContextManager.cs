@@ -51,7 +51,7 @@ namespace dyp.dyp.messagepipelines.queries.tournamentrankingquery
                 Points = data.Points,
                 Points_drawn = data.Points_drawn,
                 Drawn = data.Drawn,
-                Walkover = data.Walkover
+                Walkover = data.Fair_lots
             };
         }
 

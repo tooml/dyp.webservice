@@ -1,0 +1,53 @@
+{
+  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
+  "Id": "b17bd61f-9e53-40d3-88b1-373415ff7ad3",
+  "Name": "MatchCreated",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:16:30.3240309+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
+    "Id": "b3ca4b13-3ccc-4282-a783-3b48e3a73c41",
+    "Round_id": "a623f073-b6fb-48b4-9543-5972493b8556",
+    "Home": {
+      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
+      "Player_one": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "d2226332-8026-40e8-ad06-39e7f29237fc",
+        "First_name": "Bernd",
+        "Last_name": "Bernd",
+        "Image": ""
+      },
+      "Player_two": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "986ac80b-6f46-41b0-ae94-fa6582e0676d",
+        "First_name": "Matze",
+        "Last_name": "Matze",
+        "Image": ""
+      }
+    },
+    "Away": {
+      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
+      "Player_one": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "3b4df2df-41fa-4c5c-a979-56d34f8186dc",
+        "First_name": "Sushi",
+        "Last_name": "Sushi",
+        "Image": ""
+      },
+      "Player_two": {
+        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+        "Id": "12f0f335-abf1-4757-9b84-d37b8be2cc5f",
+        "First_name": "Pat",
+        "Last_name": "Pat",
+        "Image": ""
+      }
+    },
+    "Table": 1,
+    "Sets": 2,
+    "Drawn": true
+  }
+}

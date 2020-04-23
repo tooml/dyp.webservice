@@ -1,0 +1,18 @@
+{
+  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
+  "Id": "03cc06bb-e929-48a5-9646-71c51305d460",
+  "Name": "PersonMatchStatsCreated",
+  "Context": {
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
+    "Name": "PersonsContext"
+  },
+  "Timestamp": "2020-04-23T14:23:04.69632+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
+    "Tournament_id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Match_id": "2ccf7136-de3e-4238-a776-eca5aadea22c",
+    "Match_result": 1
+  }
+}

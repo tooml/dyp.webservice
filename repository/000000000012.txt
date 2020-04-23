@@ -1,53 +1,21 @@
 {
-  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
-  "Id": "2bc409f7-66a3-4204-b29d-7a79dc05e7e5",
-  "Name": "MatchCreated",
+  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
+  "Id": "2f640056-ebc5-4b31-be7d-cc0b51efdce3",
+  "Name": "PersonStored",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "17175162-9d63-487d-bda0-d56d8c9796c9",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-21T14:01:21.3295366+02:00",
+  "Timestamp": "2020-04-23T14:12:26.1818004+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
-    "Id": "f7b1e5db-3da3-4de9-ae93-095039b790ae",
-    "Round_id": "099ec85d-3413-445d-bc01-06f8e7d5549b",
-    "Home": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "388d7274-d89a-4598-a867-a4dd942de6f0",
-        "First_name": "gbn",
-        "Last_name": "hhjj",
-        "Image": null
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "8b19aaae-f1bc-4493-8811-e53141cf7eb4",
-        "First_name": "ghjjjj",
-        "Last_name": "hjkkkk",
-        "Image": null
-      }
-    },
-    "Away": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "f06af89c-0dff-4a4e-900a-a8e7d6f13361",
-        "First_name": "ggdfg",
-        "Last_name": "vbbn",
-        "Image": null
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "ae952196-dc99-48a5-a0bd-e43a0b07edfd",
-        "First_name": "nnnnkk",
-        "Last_name": "ghjbhj",
-        "Image": null
-      }
-    },
-    "Table": 1,
-    "Sets": 2,
-    "Drawn": false
+    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
+    "Person": {
+      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
+      "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
+      "First_name": "Harry",
+      "Last_name": "Harry",
+      "Image": ""
+    }
   }
 }

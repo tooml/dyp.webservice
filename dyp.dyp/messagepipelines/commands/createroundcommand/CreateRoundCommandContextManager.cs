@@ -28,8 +28,8 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
             _ctx_model.Walkover_player_ids = new List<string>();
 
             var events = _es.Replay(new TournamentContext(cmd.TournamentId, nameof(TournamentContext)),
-                typeof(RoundCreated), typeof(PlayersStored), typeof(OptionsCreated),
-                typeof(WalkoverPlayed), typeof(MatchCreated), typeof(PlayerActivityChanged));
+                typeof(RoundCreated), typeof(PlayersStored), typeof(OptionsCreated), typeof(WalkoverPlayed), 
+                typeof(MatchCreated), typeof(PlayerActivityChanged), typeof(TeamCreated), typeof(PlayerStrengthChanged));
             Update(events);
 
             var person_events = _es.Replay(typeof(PersonDeleted));
@@ -62,7 +62,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     _ctx_model.Tables = options_data.Tables;
                     _ctx_model.Sets = options_data.Sets;
                     _ctx_model.Drawn = options_data.Drawn;
-                    _ctx_model.Walkover = options_data.Walkover;
+                    _ctx_model.Fair_lots = options_data.Fair_lots;
                     break;
 
                 case WalkoverPlayed wp:
@@ -92,6 +92,16 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     var person_delete_data = ps.Data as PersonDeleteData;
                     var index = _ctx_model.Players.FindIndex(person => person.Id.Equals(person_delete_data.Id));
                     _ctx_model.Players.RemoveAt(index);
+                    break;
+
+                case TeamCreated tc:
+                    var team_created_data = tc.Data as TeamCreatedData;
+                    _ctx_model.Previous_teams.Add((team_created_data.Player_one_id, team_created_data.Player_two_id));
+                    break;
+
+                case PlayerStrengthChanged sc:
+                    var player_strength_data = sc.Data as PlayerStrengthData;
+                    _ctx_model.Get_player(player_strength_data.Player_id).Strength += player_strength_data.Strength_amount;
                     break;
             }
         }

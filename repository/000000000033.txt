@@ -1,0 +1,16 @@
+{
+  "$type": "dyp.dyp.events.RoundCreated, dyp.dyp",
+  "Id": "f7111ceb-b8fe-4d49-907c-470121c84914",
+  "Name": "RoundCreated",
+  "Context": {
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Name": "TournamentContext"
+  },
+  "Timestamp": "2020-04-23T14:14:47.4376529+02:00",
+  "Data": {
+    "$type": "dyp.dyp.events.data.RoundData, dyp.dyp",
+    "Id": "41d49efa-7c93-4a8b-bb2e-148737f27729",
+    "Count": 0
+  }
+}

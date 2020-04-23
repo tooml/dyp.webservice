@@ -31,7 +31,7 @@ namespace dyp.dyp.messagepipelines.commands.changeoptionscommand
                 Points = ctx_model.Points,
                 Points_drawn = ctx_model.PointsDrawn,
                 Drawn = ctx_model.Drawn,
-                Walkover = ctx_model.Walkover
+                Fair_lots = ctx_model.Walkover
             };
 
             return new OptionsCreated(nameof(OptionsCreated),

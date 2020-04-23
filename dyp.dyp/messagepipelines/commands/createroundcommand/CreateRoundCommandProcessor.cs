@@ -12,6 +12,7 @@ using dyp.messagehandling.pipeline.processoroutput;
 using dyp.provider.eventstore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using static dyp.dyp.messagepipelines.commands.createroundcommand.CreateRoundCommandContextModel;
 
 namespace dyp.dyp.messagepipelines.commands.createroundcommand
@@ -31,7 +32,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
             var ctx_model = model as CreateRoundCommandContextModel;
 
             var tournament_director = new TournamentDirector();
-            var round = tournament_director.New_round(Map(ctx_model).ToList(), ctx_model.Tables);
+            var round = tournament_director.New_round(Map(ctx_model));
 
             var round_id = _id_provider.Get_new_id().ToString();
 
@@ -39,20 +40,30 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
             events.Add(Map(round, round_id, cmd.TournamentId, ctx_model.Round_count));
             events.AddRange(Map(round.Matches, ctx_model, round_id, cmd.TournamentId));
             events.AddRange(Map(round.Walkover, cmd.TournamentId));
+            events.AddRange(Map(round.Matches, cmd.TournamentId));
 
             return new CommandOutput(new Success(), events.ToArray());
         }
 
-        private IEnumerable<contracts.data.Player> Map(CreateRoundCommandContextModel model)
+        private CreateRoundArgs Map(CreateRoundCommandContextModel model)
         {
-            return model.Players.Where(pl => pl.Enabled).Select(pl => new contracts.data.Player()
+            var players = model.Players.Where(pl => pl.Enabled).Select(pl => new contracts.data.Player()
             {
                 Id = pl.Id,
                 First_name = pl.First_name,
                 Last_name = pl.Last_name,
                 Matches = pl.Matches,
-                Walkover_played = model.Walkover_player_ids.Count(p => p == pl.Id)
+                Walkover_played = model.Walkover_player_ids.Count(p => p == pl.Id),
+                Strength_amount = pl.Strength
             });
+
+            return new CreateRoundArgs()
+            {
+                Players = players,
+                Tables = model.Tables,
+                Fair_lots = model.Fair_lots,
+                Previous_teams = model.Previous_teams
+            };
         }
 
         private Event Map(Round round, string round_id, string tournament_id, int round_count)
@@ -129,6 +140,23 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                 return new WalkoverPlayed(nameof(WalkoverPlayed),
                     new TournamentContext(tournament_id, nameof(TournamentContext)), w);
             }).ToList();
+        }
+
+        private IEnumerable<Event> Map(IEnumerable<contracts.data.Match> matches, string tournament_id)
+        {
+            var team_datas = matches.Select(m =>
+            {
+                return new TeamCreatedData[]
+                {
+                    new TeamCreatedData(){ Player_one_id = m.Home.Member_one.Id, Player_two_id = m.Home.Member_two.Id },
+                    new TeamCreatedData(){ Player_one_id = m.Away.Member_one.Id, Player_two_id = m.Away.Member_two.Id }
+                };
+            });
+
+            return team_datas.SelectMany(datas =>
+                                    datas.Select(data =>
+                                            new TeamCreated(nameof(TeamCreated),
+                                            new TournamentContext(tournament_id, nameof(TournamentContext)), data)));
         }
 
         private string Get_player_image(CreateRoundCommandContextModel ctx_model, string player_id) =>

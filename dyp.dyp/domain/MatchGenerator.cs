@@ -12,18 +12,18 @@ namespace dyp.dyp
 
         public MatchGenerator() { }
 
-        public MatchList Start_match_generation(IEnumerable<Player> players, int tables)
+        public MatchList Start_match_generation(CreateRoundArgs create_parmeter)
         {
-            var matches_count = Calculate_matches_count(players);
+            var matches_count = Calculate_matches_count(create_parmeter.Players);
             var players_count_in_round = Players_count_in_round(matches_count);
-            var orderd_players = Order_players(players).ToList();
+            var orderd_players = Order_players(create_parmeter.Players).ToList();
 
             var players_in_round = Extract_players(orderd_players, players_count_in_round);
             var walkover_players = Extract_walkover_players(orderd_players, players_count_in_round);
 
-            var teams = Pull_teams(players_in_round);
-            var matches = Pull_matches(teams);
-            var assigned_matches = Assign_tables(matches, tables);
+            var teams = Pull_teams(players_in_round, create_parmeter.Fair_lots, create_parmeter.Previous_teams);
+            var matches = Pull_matches(teams, create_parmeter.Fair_lots);
+            var assigned_matches = Assign_tables(matches, create_parmeter.Tables);
 
             return new MatchList() { Matches = assigned_matches, Walkover = walkover_players };
         }
@@ -53,26 +53,46 @@ namespace dyp.dyp
             return players.Skip(players_count).ToList();
         }
 
-        private IEnumerable<Team> Pull_teams(IEnumerable<Player> players)
+        private IEnumerable<Team> Pull_teams(IEnumerable<Player> players, bool fair_lots, 
+                                             IEnumerable<(string Player_one, string Player_two)> previous_teams)
         {
-            var team_builder = new SimpleTeamBuilder();
-            return team_builder.Determine_teams(players);
+            var simple_team_builder = new SimpleTeamBuilder();
+            var fair_lots_team_builder = new PlayWithAllTeamBuilder();
+
+            switch (fair_lots)
+            {
+                case true:
+                    return fair_lots_team_builder.Determine_teams(players, previous_teams);
+                case false:
+                    return simple_team_builder.Determine_teams(players);
+                default:
+                    return simple_team_builder.Determine_teams(players);
+            }
         }
 
-        //private SimpleTeamBuilder Determine_team_building_strategy(Options options)
-        //{
-        //    switch (options.Fair_lots)
-        //    {
-        //        case true:
-        //            throw new NotImplementedException();
-        //        case false:
-        //            return new SimpleTeamBuilder();
-        //        default:
-        //            throw new NotSupportedException();
-        //    }
-        //}
+        private IEnumerable<Match> Pull_matches(IEnumerable<Team> teams, bool fair_lots)
+        {
+            switch (fair_lots)
+            {
+                case true:
+                    return Pull_matches_fair(teams);
+                case false:
+                    return Pull_matches_shuffle(teams);
+                default:
+                    return Pull_matches_shuffle(teams);
+            }
+        }
 
-        private IEnumerable<Match> Pull_matches(IEnumerable<Team> teams)
+        private IEnumerable<Match> Pull_matches_fair(IEnumerable<Team> teams)
+        {
+            var teams_by_strength = teams.OrderBy(team => team.Strength).ToArray();
+            var pairs = ListPairing.Pairing_list(teams_by_strength);
+            var matches = Map(pairs).ToList();
+
+            return matches;
+        }
+
+        private IEnumerable<Match> Pull_matches_shuffle(IEnumerable<Team> teams)
         {
             var shuffled_teams = ListShuffle.Shuffle_list(teams.ToArray());
             var pairs = ListPairing.Pairing_list(shuffled_teams);
@@ -80,14 +100,6 @@ namespace dyp.dyp
 
             return matches;
         }
-
-        //private int Calculate_max_sets_to_play(int sets_to_win, bool tied)
-        //{
-        //    if (tied)
-        //        return sets_to_win;
-
-        //    return sets_to_win + (sets_to_win - 1);
-        //}
 
         private IEnumerable<Match> Map(IEnumerable<Tuple<Team, Team>> team_pairs)
         {
