@@ -1,53 +1,20 @@
 {
-  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
-  "Id": "2714b1bc-8612-4ced-b76d-cb63cc75766a",
-  "Name": "MatchCreated",
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "78f6fa45-76d6-4a7e-ab71-38ec93f27bcd",
+  "Name": "PlayersStored",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "6bf52e5b-6709-4fc9-9012-9bc04d9db230",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:47.439392+02:00",
+  "Timestamp": "2020-04-24T15:42:42.6389221+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
-    "Id": "f21b1926-3535-427d-a535-20df9f33e612",
-    "Round_id": "41d49efa-7c93-4a8b-bb2e-148737f27729",
-    "Home": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
-        "First_name": "Lisa",
-        "Last_name": "Lisa",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
-        "First_name": "Harry",
-        "Last_name": "Harry",
-        "Image": ""
-      }
-    },
-    "Away": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "9c9e96be-e5d7-4a13-841e-cd6be7eda65b",
-        "First_name": "Dit",
-        "Last_name": "Dit",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "d2226332-8026-40e8-ad06-39e7f29237fc",
-        "First_name": "Bernd",
-        "Last_name": "Bernd",
-        "Image": ""
-      }
-    },
-    "Table": 1,
-    "Sets": 2,
-    "Drawn": true
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "4b580484-2487-4058-9fcc-488edcda1355",
+      "First_name": "qwef",
+      "Last_name": "qewfq"
+    }
   }
 }

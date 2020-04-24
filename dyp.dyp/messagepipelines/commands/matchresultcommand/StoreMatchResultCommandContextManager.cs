@@ -63,7 +63,7 @@ namespace dyp.dyp.messagepipelines.commands.matchresultcommand
 
                 case PlayerStrengthChanged sc:
                     var strength_data = sc.Data as PlayerStrengthData;
-                    _ctx_model.Change_strength(strength_data.Player_id, strength_data.Strength_amount);
+                    _ctx_model.Update_strength(strength_data.Player_id, strength_data.Strength_amount);
                     break;
             }
         }

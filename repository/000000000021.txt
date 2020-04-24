@@ -1,21 +1,18 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "a0418e12-df06-4f01-84aa-58cbf9ece368",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
+  "Id": "df5296c3-49cb-4534-b0db-f6e8b9db0b7e",
+  "Name": "PersonMatchStatsCreated",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020449+02:00",
+  "Timestamp": "2020-04-24T15:37:29.5996946+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
-      "First_name": "Domi",
-      "Last_name": "Domi",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Tournament_id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
+    "Match_id": "1944f327-a698-49b3-92a7-6d43f93cff4b",
+    "Match_result": 0
   }
 }

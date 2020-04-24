@@ -1,20 +1,16 @@
 {
-  "$type": "dyp.dyp.events.OptionsCreated, dyp.dyp",
-  "Id": "dfcf1895-76ee-4da9-8550-fa4fc48225b5",
-  "Name": "TournamentCreated",
+  "$type": "dyp.dyp.events.RoundCreated, dyp.dyp",
+  "Id": "51bc4fa3-cc9d-459f-87bd-42ade7474d05",
+  "Name": "RoundCreated",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0012678+02:00",
+  "Timestamp": "2020-04-24T15:34:33.0884352+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.OptionsData, dyp.dyp",
-    "Tables": 2,
-    "Sets": 2,
-    "Points": 2,
-    "Points_drawn": 1,
-    "Drawn": true,
-    "Fair_lots": false
+    "$type": "dyp.dyp.events.data.RoundData, dyp.dyp",
+    "Id": "102afc87-a19c-4cd5-9b40-8d63f9f8bb8f",
+    "Count": 0
   }
 }

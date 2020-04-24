@@ -25,8 +25,7 @@ namespace dyp.dyp.messagepipelines.queries.competitorsquery
             {
                 Id = personInfo.Id,
                 Name = string.Concat(personInfo.First_name, ", ", personInfo.Last_name),
-                Compete = false,
-                Image = personInfo.Image
+                Compete = false
             };
         }
     }

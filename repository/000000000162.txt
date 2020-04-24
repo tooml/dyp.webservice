@@ -1,18 +1,18 @@
 {
-  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
-  "Id": "c7bc696b-a4fc-4929-bf2f-ba7f6e2b2b56",
-  "Name": "PersonMatchStatsCreated",
+  "$type": "dyp.dyp.events.PersonMatchStatsDeleted, dyp.dyp",
+  "Id": "37d38030-04dc-403d-b092-9497c1f3525e",
+  "Name": "PersonMatchStatsDeleted",
   "Context": {
     "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
-    "Id": "21d8fc9c-41d3-4c8a-a94c-c31b5dd39821",
+    "Id": "4b580484-2487-4058-9fcc-488edcda1355",
     "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:16:51.779734+02:00",
+  "Timestamp": "2020-04-24T17:27:35.5644126+02:00",
   "Data": {
     "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
-    "Person_id": "21d8fc9c-41d3-4c8a-a94c-c31b5dd39821",
-    "Tournament_id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Match_id": "5d1b6493-9c42-4814-9f1a-b7a6c16da868",
-    "Match_result": 0
+    "Person_id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Tournament_id": "fe6e6073-cd43-46e8-9a9c-4e9bbc69c0bc",
+    "Match_id": "8b21f44d-23ef-444e-9bca-a0424557c3ab",
+    "Match_result": 3
   }
 }

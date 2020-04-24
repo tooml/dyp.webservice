@@ -13,7 +13,7 @@ namespace dyp.dyp.messagepipelines.commands.matchresultcommand
         public int Home_strength;
         public int Away_strength;
 
-        public void Change_strength(string player_id, int strengt_amount)
+        public void Update_strength(string player_id, int strengt_amount)
         {
             if (Home_player.Contains(player_id)) Home_strength += strengt_amount;
             if (Away_player.Contains(player_id)) Away_strength += strengt_amount;

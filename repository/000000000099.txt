@@ -1,22 +1,17 @@
 {
-  "$type": "dyp.dyp.events.MatchPlayed, dyp.dyp",
-  "Id": "126444a8-7c97-4788-ab7a-d980fc056a8a",
-  "Name": "MatchPlayed",
+  "$type": "dyp.dyp.events.PlayerStrengthChanged, dyp.dyp",
+  "Id": "49e3ecb2-92d1-486e-bbed-34869489fd35",
+  "Name": "PlayerStrengthChanged",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "ac1ebb66-4b81-4d20-87ca-d5cb2e3ad944",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:15:45.1216367+02:00",
+  "Timestamp": "2020-04-24T17:23:31.823281+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.MatchResultData, dyp.dyp",
-    "Match_id": "408305af-81cf-4a78-99f5-4fd5fed790d3",
-    "Results": {
-      "$type": "System.Collections.Generic.List`1[[dyp.dyp.events.data.SetResult, dyp.dyp]], System.Private.CoreLib",
-      "$values": [
-        1,
-        1
-      ]
-    }
+    "$type": "dyp.dyp.events.data.PlayerStrengthData, dyp.dyp",
+    "Player_id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Match_id": "4cbd695f-ad6d-4fe6-be20-cff20d002f5e",
+    "Strength_amount": 3
   }
 }

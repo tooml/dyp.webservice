@@ -1,21 +1,18 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "4ea0d25c-6fcd-404d-a27a-162a089a78db",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
+  "Id": "60e7b79a-e73e-4bc4-8c30-22b866d37391",
+  "Name": "PersonMatchStatsCreated",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020459+02:00",
+  "Timestamp": "2020-04-24T15:37:29.5997098+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "d2226332-8026-40e8-ad06-39e7f29237fc",
-      "First_name": "Bernd",
-      "Last_name": "Bernd",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Tournament_id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
+    "Match_id": "1944f327-a698-49b3-92a7-6d43f93cff4b",
+    "Match_result": 0
   }
 }

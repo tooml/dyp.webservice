@@ -11,7 +11,6 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
             public string Id;
             public string First_name;
             public string Last_name;
-            public string Image;
             public int Matches;
             public bool Enabled;
             public int Strength;

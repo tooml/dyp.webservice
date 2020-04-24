@@ -1,21 +1,18 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "0f363bf1-4302-4e0b-8717-c2e478bdbaa1",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
+  "Id": "74da277c-00c3-487c-8d3d-4377878090db",
+  "Name": "PersonMatchStatsCreated",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "7ed42264-6177-489d-b51e-8663415a2821",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020472+02:00",
+  "Timestamp": "2020-04-24T15:37:29.5997171+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "9906835e-2edb-4cb1-8332-073a442ba159",
-      "First_name": "Chris",
-      "Last_name": "Ehni",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "7ed42264-6177-489d-b51e-8663415a2821",
+    "Tournament_id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
+    "Match_id": "1944f327-a698-49b3-92a7-6d43f93cff4b",
+    "Match_result": 1
   }
 }

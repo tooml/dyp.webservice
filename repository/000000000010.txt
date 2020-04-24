@@ -1,21 +1,16 @@
 {
-  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
-  "Id": "56578422-55d5-4174-997a-3c4e4902d9f0",
-  "Name": "PersonStored",
+  "$type": "dyp.dyp.events.PersonAvatarStored, dyp.dyp",
+  "Id": "75688d9c-0c03-41c8-95c1-1a2537517ee9",
+  "Name": "PersonAvatarStored",
   "Context": {
     "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
-    "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
+    "Id": "4b580484-2487-4058-9fcc-488edcda1355",
     "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:11:53.1660995+02:00",
+  "Timestamp": "2020-04-24T15:34:14.6194231+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
-    "Person": {
-      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
-      "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
-      "First_name": "Lisa",
-      "Last_name": "Lisa",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonAvatarData, dyp.dyp",
+    "Person_Id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Avatar": ""
   }
 }

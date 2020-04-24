@@ -1,16 +1,20 @@
 {
-  "$type": "dyp.dyp.events.TeamCreated, dyp.dyp",
-  "Id": "dd3578f4-3b54-4af8-87e6-b018877e8938",
-  "Name": "TeamCreated",
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "fdd74755-5f1c-4c5a-b34b-7b06088f5108",
+  "Name": "PlayersStored",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "2fa46d7d-8432-4b1f-897c-8f57f384eff4",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:47.4409775+02:00",
+  "Timestamp": "2020-04-24T17:10:25.865426+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.TeamCreatedData, dyp.dyp",
-    "Player_one_id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
-    "Player_two_id": "9906835e-2edb-4cb1-8332-073a442ba159"
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "7ed42264-6177-489d-b51e-8663415a2821",
+      "First_name": "sadfasdf",
+      "Last_name": "sdafadsf"
+    }
   }
 }

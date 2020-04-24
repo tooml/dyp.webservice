@@ -52,7 +52,6 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                         Id = player_data.Player.Id,
                         First_name = player_data.Player.First_name,
                         Last_name = player_data.Player.Last_name,
-                        Image = player_data.Player.Image,
                         Enabled = true
                     });
                     break;
@@ -91,7 +90,7 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                 case PersonDeleted ps:
                     var person_delete_data = ps.Data as PersonDeleteData;
                     var index = _ctx_model.Players.FindIndex(person => person.Id.Equals(person_delete_data.Id));
-                    _ctx_model.Players.RemoveAt(index);
+                    if(index != -1) _ctx_model.Players.RemoveAt(index);
                     break;
 
                 case TeamCreated tc:

@@ -1,21 +1,16 @@
 {
-  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
-  "Id": "86538bdc-7c62-41c6-aeb9-99bf8992b198",
-  "Name": "PersonStored",
+  "$type": "dyp.dyp.events.PersonAvatarStored, dyp.dyp",
+  "Id": "a08c1384-fa25-40dd-8c96-62a4ddd11521",
+  "Name": "PersonAvatarStored",
   "Context": {
     "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
-    "Id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
+    "Id": "7ed42264-6177-489d-b51e-8663415a2821",
     "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:10:46.9793245+02:00",
+  "Timestamp": "2020-04-24T15:33:58.2727254+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
-    "Person": {
-      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
-      "Id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
-      "First_name": "Domi",
-      "Last_name": "Domi",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonAvatarData, dyp.dyp",
+    "Person_Id": "7ed42264-6177-489d-b51e-8663415a2821",
+    "Avatar": ""
   }
 }

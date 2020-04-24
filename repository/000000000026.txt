@@ -1,21 +1,17 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "b256c1dc-3b66-4d54-8a07-31e14fa22820",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PlayerStrengthChanged, dyp.dyp",
+  "Id": "6c842eb3-0648-4c61-91dc-d9e3d0662494",
+  "Name": "PlayerStrengthChanged",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020499+02:00",
+  "Timestamp": "2020-04-24T15:37:29.6003304+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "823e5a61-5c38-45d3-89cd-572f703ab444",
-      "First_name": "Rocco",
-      "Last_name": "Rocco",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PlayerStrengthData, dyp.dyp",
+    "Player_id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Match_id": "1944f327-a698-49b3-92a7-6d43f93cff4b",
+    "Strength_amount": 2
   }
 }

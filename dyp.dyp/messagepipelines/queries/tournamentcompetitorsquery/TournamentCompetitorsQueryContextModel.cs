@@ -10,7 +10,6 @@ namespace dyp.dyp.messagepipelines.queries.tournamentplayersquery
             public string Id;
             public string First_name;
             public string Last_name;
-            public string Image;
             public bool Enabled;
         }
 

@@ -1,53 +1,18 @@
 {
-  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
-  "Id": "18cf2b55-4d8b-45ac-ab3f-17989a6f8a2d",
-  "Name": "MatchCreated",
+  "$type": "dyp.dyp.events.PersonMatchStatsDeleted, dyp.dyp",
+  "Id": "a7abb2bf-d4dc-4e02-82f3-820011b5e5a9",
+  "Name": "PersonMatchStatsDeleted",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "35528703-7c86-4f4f-9003-2a0028296e17",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:16:30.3240327+02:00",
+  "Timestamp": "2020-04-24T17:26:07.8854175+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
-    "Id": "b22180f4-6f5f-494d-9679-74da4941641a",
-    "Round_id": "a623f073-b6fb-48b4-9543-5972493b8556",
-    "Home": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "0a6cbee6-1e3e-497c-9d0c-3a5d11beec20",
-        "First_name": "Tom",
-        "Last_name": "Tom",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "9906835e-2edb-4cb1-8332-073a442ba159",
-        "First_name": "Chris",
-        "Last_name": "Ehni",
-        "Image": ""
-      }
-    },
-    "Away": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
-        "First_name": "Lisa",
-        "Last_name": "Lisa",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "7f007f21-0c42-4c79-8944-d76e1d83dd3c",
-        "First_name": "Alex",
-        "Last_name": "Alex",
-        "Image": ""
-      }
-    },
-    "Table": 1,
-    "Sets": 2,
-    "Drawn": true
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "35528703-7c86-4f4f-9003-2a0028296e17",
+    "Tournament_id": "fe6e6073-cd43-46e8-9a9c-4e9bbc69c0bc",
+    "Match_id": "8b21f44d-23ef-444e-9bca-a0424557c3ab",
+    "Match_result": 3
   }
 }

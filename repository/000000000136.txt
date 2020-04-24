@@ -1,17 +1,18 @@
 {
-  "$type": "dyp.dyp.events.PlayerStrengthChanged, dyp.dyp",
-  "Id": "1d93438a-be54-4724-8e62-843f8e22ac3a",
-  "Name": "PlayerStrengthChanged",
+  "$type": "dyp.dyp.events.PersonMatchStatsCreated, dyp.dyp",
+  "Id": "36b22b98-9d73-47ba-925e-94b42f68e66c",
+  "Name": "PersonMatchStatsCreated",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:16:27.1305793+02:00",
+  "Timestamp": "2020-04-24T17:24:54.6658234+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerStrengthData, dyp.dyp",
-    "Player_id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
-    "Match_id": "86bf8276-706f-4bf1-bc83-db8f5893a296",
-    "Strength_amount": 0
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "7c70ca62-e284-4369-b44a-8dd7aceeeec7",
+    "Tournament_id": "fe6e6073-cd43-46e8-9a9c-4e9bbc69c0bc",
+    "Match_id": "8b21f44d-23ef-444e-9bca-a0424557c3ab",
+    "Match_result": 0
   }
 }

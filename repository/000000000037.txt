@@ -1,15 +1,20 @@
 {
-  "$type": "dyp.dyp.events.WalkoverPlayed, dyp.dyp",
-  "Id": "2310e0c1-c493-4005-b53b-a4e59dc11b5d",
-  "Name": "WalkoverPlayed",
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "56c33b70-d7ff-41f3-87c7-d0d3efcdaf7d",
+  "Name": "PlayersStored",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "6bf52e5b-6709-4fc9-9012-9bc04d9db230",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:47.4401289+02:00",
+  "Timestamp": "2020-04-24T15:42:42.6389255+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.WalkoverData, dyp.dyp",
-    "Id": "21d8fc9c-41d3-4c8a-a94c-c31b5dd39821"
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "9f3e027e-5fbd-44d4-bee5-37dc97fa532e",
+      "First_name": "dfsgsdfg",
+      "Last_name": ""
+    }
   }
 }

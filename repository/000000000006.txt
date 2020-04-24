@@ -1,21 +1,16 @@
 {
-  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
-  "Id": "b75fbb5e-5fad-43b9-a13d-98c36c5b7940",
-  "Name": "PersonStored",
+  "$type": "dyp.dyp.events.PersonAvatarStored, dyp.dyp",
+  "Id": "9954949a-c13f-4a78-a3a3-53f5888040e1",
+  "Name": "PersonAvatarStored",
   "Context": {
     "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
-    "Id": "9906835e-2edb-4cb1-8332-073a442ba159",
+    "Id": "35528703-7c86-4f4f-9003-2a0028296e17",
     "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:11:11.9843546+02:00",
+  "Timestamp": "2020-04-24T15:34:02.211956+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
-    "Person": {
-      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
-      "Id": "9906835e-2edb-4cb1-8332-073a442ba159",
-      "First_name": "Chris",
-      "Last_name": "Ehni",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PersonAvatarData, dyp.dyp",
+    "Person_Id": "35528703-7c86-4f4f-9003-2a0028296e17",
+    "Avatar": ""
   }
 }

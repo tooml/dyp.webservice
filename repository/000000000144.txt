@@ -1,15 +1,18 @@
 {
-  "$type": "dyp.dyp.events.WalkoverPlayed, dyp.dyp",
-  "Id": "60952c0d-bc48-4179-b612-3718a9883a91",
-  "Name": "WalkoverPlayed",
+  "$type": "dyp.dyp.events.PersonMatchStatsDeleted, dyp.dyp",
+  "Id": "d73dcdcf-1563-4594-9756-2c22c732b3c7",
+  "Name": "PersonMatchStatsDeleted",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:16:30.3240423+02:00",
+  "Timestamp": "2020-04-24T17:26:07.885424+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.WalkoverData, dyp.dyp",
-    "Id": "7901f8da-fa2d-4334-a72a-9447e83b3f62"
+    "$type": "dyp.dyp.events.data.PersonMatchStatsData, dyp.dyp",
+    "Person_id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Tournament_id": "fe6e6073-cd43-46e8-9a9c-4e9bbc69c0bc",
+    "Match_id": "8b21f44d-23ef-444e-9bca-a0424557c3ab",
+    "Match_result": 3
   }
 }

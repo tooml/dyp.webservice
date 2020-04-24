@@ -50,7 +50,6 @@ namespace dyp.dyp.messagepipelines.commands.changeplayerscommand
                     var update_pers = _ctx_model.Persons.Single(pers => pers.Id.Equals(person_update.Id));
                     update_pers.First_name = person_update.First_name;
                     update_pers.Last_name = person_update.Last_name;
-                    update_pers.Image = person_update.Image;
                     break;
 
                 case PlayersStored ps:
@@ -73,7 +72,6 @@ namespace dyp.dyp.messagepipelines.commands.changeplayerscommand
                 Id = data.Person.Id,
                 First_name = data.Person.First_name,
                 Last_name = data.Person.Last_name,
-                Image = data.Person.Image
             };
         }
 

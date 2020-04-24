@@ -91,15 +91,13 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     {
                         Id = m.Home.Member_one.Id,
                         First_name = m.Home.Member_one.First_name,
-                        Last_name = m.Home.Member_one.Last_name,
-                        Image = Get_player_image(ctx_model, m.Home.Member_one.Id)
+                        Last_name = m.Home.Member_one.Last_name
                     },
                     Player_two = new events.data.Player()
                     {
                         Id = m.Home.Member_two.Id,
                         First_name = m.Home.Member_two.First_name,
-                        Last_name = m.Home.Member_two.Last_name,
-                        Image = Get_player_image(ctx_model, m.Home.Member_two.Id)
+                        Last_name = m.Home.Member_two.Last_name
                     }
                 },
                 Away = new MatchData.Team()
@@ -108,15 +106,13 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                     {
                         Id = m.Away.Member_one.Id,
                         First_name = m.Away.Member_one.First_name,
-                        Last_name = m.Away.Member_one.Last_name,
-                        Image = Get_player_image(ctx_model, m.Away.Member_one.Id)
+                        Last_name = m.Away.Member_one.Last_name
                     },
                     Player_two = new events.data.Player()
                     {
                         Id = m.Away.Member_two.Id,
                         First_name = m.Away.Member_two.First_name,
-                        Last_name = m.Away.Member_two.Last_name,
-                        Image = Get_player_image(ctx_model, m.Away.Member_two.Id)
+                        Last_name = m.Away.Member_two.Last_name
                     }
                 },
                 Table = m.Table,
@@ -158,8 +154,5 @@ namespace dyp.dyp.messagepipelines.commands.createroundcommand
                                             new TeamCreated(nameof(TeamCreated),
                                             new TournamentContext(tournament_id, nameof(TournamentContext)), data)));
         }
-
-        private string Get_player_image(CreateRoundCommandContextModel ctx_model, string player_id) =>
-            ctx_model.Players.First(player => player.Id.Equals(player_id)).Image;
     }
 }

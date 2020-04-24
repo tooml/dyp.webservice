@@ -1,21 +1,20 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "6de8cc80-7c46-488a-8773-aed14a9861c6",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
+  "Id": "65bf9590-91f8-4060-a7a7-1a683d4f3da8",
+  "Name": "PersonStored",
   "Context": {
-    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "TournamentContext"
+    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
+    "Id": "9f3e027e-5fbd-44d4-bee5-37dc97fa532e",
+    "Name": "PersonsContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020541+02:00",
+  "Timestamp": "2020-04-24T15:42:21.9303644+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "21d8fc9c-41d3-4c8a-a94c-c31b5dd39821",
-      "First_name": "Rene",
-      "Last_name": "Rene",
-      "Image": ""
+    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
+    "Person": {
+      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
+      "Id": "9f3e027e-5fbd-44d4-bee5-37dc97fa532e",
+      "First_name": "dfsgsdfg",
+      "Last_name": ""
     }
   }
 }

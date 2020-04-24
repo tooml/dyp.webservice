@@ -27,8 +27,7 @@ namespace dyp.dyp.messagepipelines.queries.personsstockquery
             {
                 Id = personInfo.Id,
                 FirstName = personInfo.First_name,
-                LastName = personInfo.Last_name,
-                Image = personInfo.Image
+                LastName = personInfo.Last_name
             };
         }
     }

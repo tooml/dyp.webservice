@@ -22,8 +22,7 @@ namespace dyp.dyp.messagepipelines.queries.persontemplatequery
             {
                 Id = _id_provider.Get_new_id().ToString(),
                 FirstName = string.Empty,
-                LastName = string.Empty,
-                Image = string.Empty
+                LastName = string.Empty
             });
         }
     }

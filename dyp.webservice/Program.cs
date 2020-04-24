@@ -25,6 +25,7 @@ namespace dyp.webservice
                  })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    //webBuilder.UseUrls("http://192.168.5.1:5000");
                     webBuilder.UseStartup<Startup>();
                 });
     }

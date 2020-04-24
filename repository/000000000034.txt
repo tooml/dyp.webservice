@@ -1,53 +1,20 @@
 {
-  "$type": "dyp.dyp.events.MatchCreated, dyp.dyp",
-  "Id": "4b86d0ec-ef93-480b-a847-b827f86de571",
-  "Name": "MatchCreated",
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "c1dfd67d-2cd9-4518-b99f-882e79fa5515",
+  "Name": "PlayersStored",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "6bf52e5b-6709-4fc9-9012-9bc04d9db230",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:47.4393892+02:00",
+  "Timestamp": "2020-04-24T15:42:42.63891+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.MatchData, dyp.dyp",
-    "Id": "92e1e1dd-7f50-416f-85f8-f5d2f68ee8ad",
-    "Round_id": "41d49efa-7c93-4a8b-bb2e-148737f27729",
-    "Home": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "0ced1bad-66c6-45d0-abc4-b5a8b47aeb3c",
-        "First_name": "Domi",
-        "Last_name": "Domi",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "9906835e-2edb-4cb1-8332-073a442ba159",
-        "First_name": "Chris",
-        "Last_name": "Ehni",
-        "Image": ""
-      }
-    },
-    "Away": {
-      "$type": "dyp.dyp.events.data.MatchData+Team, dyp.dyp",
-      "Player_one": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "7901f8da-fa2d-4334-a72a-9447e83b3f62",
-        "First_name": "Daniel",
-        "Last_name": "Reißner",
-        "Image": ""
-      },
-      "Player_two": {
-        "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-        "Id": "b849da9c-2543-493e-a63e-7a32bcc8506e",
-        "First_name": "Chris",
-        "Last_name": "Öttl",
-        "Image": ""
-      }
-    },
-    "Table": 1,
-    "Sets": 2,
-    "Drawn": true
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "35528703-7c86-4f4f-9003-2a0028296e17",
+      "First_name": "sadfasdfw",
+      "Last_name": "sdfasdf"
+    }
   }
 }

@@ -1,21 +1,17 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "9b206776-1c71-4d8a-ba99-30dcf0640c3b",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.TournamentCreated, dyp.dyp",
+  "Id": "a3e53390-e30f-4daf-8ad6-fb786b9d80ae",
+  "Name": "TournamentCreated",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "6bf52e5b-6709-4fc9-9012-9bc04d9db230",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020559+02:00",
+  "Timestamp": "2020-04-24T15:42:42.6384088+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "3b4df2df-41fa-4c5c-a979-56d34f8186dc",
-      "First_name": "Sushi",
-      "Last_name": "Sushi",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.TournamentData, dyp.dyp",
+    "Id": "6bf52e5b-6709-4fc9-9012-9bc04d9db230",
+    "Name": "sdfgrrrr",
+    "Created": "24.04.2020 15:42:42"
   }
 }

@@ -1,21 +1,17 @@
 {
-  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
-  "Id": "b69e3cbe-7007-4350-835f-18fb5fe2ebcd",
-  "Name": "PlayersStored",
+  "$type": "dyp.dyp.events.PlayerStrengthChanged, dyp.dyp",
+  "Id": "522e196a-7491-469c-bd29-6ab4622be2d8",
+  "Name": "PlayerStrengthChanged",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0020509+02:00",
+  "Timestamp": "2020-04-24T15:37:29.6003459+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
-    "Player": {
-      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
-      "Id": "779ed9d3-4d51-419a-a164-575148fa5bb8",
-      "First_name": "Lisa",
-      "Last_name": "Lisa",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.PlayerStrengthData, dyp.dyp",
+    "Player_id": "4b580484-2487-4058-9fcc-488edcda1355",
+    "Match_id": "1944f327-a698-49b3-92a7-6d43f93cff4b",
+    "Strength_amount": 2
   }
 }

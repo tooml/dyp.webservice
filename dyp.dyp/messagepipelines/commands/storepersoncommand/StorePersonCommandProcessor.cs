@@ -17,8 +17,10 @@ namespace dyp.dyp.messagepipelines.commands.storepersoncommand
             var cmd = input as StorePersonCommand;
             var ctx_model = model as StorePersonCommandContextModel;
 
-            var ev = Map(ctx_model, cmd);
-            return new CommandOutput(new Success(), new Event[] { ev });
+            var person_ev = Map(ctx_model, cmd);
+            var person_avatar_ev = Map(cmd);
+
+            return new CommandOutput(new Success(), new Event[] { person_ev, person_avatar_ev });
         }
 
         private Event Map(StorePersonCommandContextModel cmd_model, StorePersonCommand cmd)
@@ -29,8 +31,7 @@ namespace dyp.dyp.messagepipelines.commands.storepersoncommand
                 {
                     Id = cmd.Id,
                     First_name = cmd.FirstName,
-                    Last_name = cmd.LastName,
-                    Image = string.IsNullOrEmpty(cmd.Image) ? string.Empty : cmd.Image
+                    Last_name = cmd.LastName
                 }
             };
 
@@ -40,6 +41,18 @@ namespace dyp.dyp.messagepipelines.commands.storepersoncommand
                 return new PersonUpdated(nameof(PersonUpdated), person_context, person_data);
 
             return new PersonStored(nameof(PersonStored), person_context, person_data);
+        }
+
+        private Event Map(StorePersonCommand cmd)
+        {
+            var person_avatar_data = new PersonAvatarData()
+            {
+                Person_Id = cmd.Id,
+                Avatar = cmd.Avatar
+            };
+
+            var person_context = new PersonsContext(cmd.Id, nameof(PersonsContext));
+            return new PersonAvatarStored(nameof(PersonAvatarStored), person_context, person_avatar_data);
         }
     }
 }

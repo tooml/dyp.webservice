@@ -1,17 +1,20 @@
 {
-  "$type": "dyp.dyp.events.TournamentCreated, dyp.dyp",
-  "Id": "06d64700-bedf-422a-8509-4c885f13e3e3",
-  "Name": "TournamentCreated",
+  "$type": "dyp.dyp.events.PlayersStored, dyp.dyp",
+  "Id": "d7f0d849-1d22-4c81-ad7c-2ccd499822bf",
+  "Name": "PlayersStored",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:14:35.0006738+02:00",
+  "Timestamp": "2020-04-24T15:34:26.044884+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.TournamentData, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
-    "Name": "Erster Turnier",
-    "Created": "23.04.2020 14:14:34"
+    "$type": "dyp.dyp.events.data.PlayerData, dyp.dyp",
+    "Player": {
+      "$type": "dyp.dyp.events.data.Player, dyp.dyp",
+      "Id": "4b580484-2487-4058-9fcc-488edcda1355",
+      "First_name": "qwef",
+      "Last_name": "qewfq"
+    }
   }
 }

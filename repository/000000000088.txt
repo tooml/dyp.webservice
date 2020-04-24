@@ -1,15 +1,17 @@
 {
-  "$type": "dyp.dyp.events.WalkoverPlayed, dyp.dyp",
-  "Id": "a24c72c7-ee96-427b-a06c-4bf33e7f2803",
-  "Name": "WalkoverPlayed",
+  "$type": "dyp.dyp.events.TournamentCreated, dyp.dyp",
+  "Id": "f78f6d32-f177-4c3f-8f23-926f89089eaa",
+  "Name": "TournamentCreated",
   "Context": {
     "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
-    "Id": "360345b7-3769-4795-87f9-2d14e3923486",
+    "Id": "1ecc17c8-5082-46c2-9f5f-754ed17aded7",
     "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:15:34.9174814+02:00",
+  "Timestamp": "2020-04-24T17:23:26.8602834+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.WalkoverData, dyp.dyp",
-    "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95"
+    "$type": "dyp.dyp.events.data.TournamentData, dyp.dyp",
+    "Id": "1ecc17c8-5082-46c2-9f5f-754ed17aded7",
+    "Name": "dsfgsdgsg",
+    "Created": "24.04.2020 17:23:26"
   }
 }

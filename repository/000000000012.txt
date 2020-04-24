@@ -1,21 +1,20 @@
 {
-  "$type": "dyp.dyp.events.PersonStored, dyp.dyp",
-  "Id": "2f640056-ebc5-4b31-be7d-cc0b51efdce3",
-  "Name": "PersonStored",
+  "$type": "dyp.dyp.events.OptionsCreated, dyp.dyp",
+  "Id": "f27636fa-8bda-45ac-aadd-7ee92363dd57",
+  "Name": "TournamentCreated",
   "Context": {
-    "$type": "dyp.dyp.events.context.PersonsContext, dyp.dyp",
-    "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
-    "Name": "PersonsContext"
+    "$type": "dyp.dyp.events.context.TournamentContext, dyp.dyp",
+    "Id": "bbea1b75-ac5e-43c6-90d3-ee963488975d",
+    "Name": "TournamentContext"
   },
-  "Timestamp": "2020-04-23T14:12:26.1818004+02:00",
+  "Timestamp": "2020-04-24T15:34:26.0439754+02:00",
   "Data": {
-    "$type": "dyp.dyp.events.data.PersonData, dyp.dyp",
-    "Person": {
-      "$type": "dyp.dyp.events.data.Person, dyp.dyp",
-      "Id": "f5dee0c8-b3ea-465a-a5de-c22e2625db95",
-      "First_name": "Harry",
-      "Last_name": "Harry",
-      "Image": ""
-    }
+    "$type": "dyp.dyp.events.data.OptionsData, dyp.dyp",
+    "Tables": 1,
+    "Sets": 2,
+    "Points": 2,
+    "Points_drawn": 1,
+    "Drawn": false,
+    "Fair_lots": false
   }
 }
